@@ -15,6 +15,11 @@ int main()
 结构体变量：.
  结构体指针：->
 结构体、指针
+struct Book
+{
+	char name[20];
+	int price;
+};
 int main()
 {
 	struct Book b1 = { "高等数学",20 };
@@ -28,5 +33,34 @@ int main()
 	printf("价格:%d元\n", b1.price);
 	b1.price = 15;
 	printf("修改后的价格:%d元\n", b1.price);
+	return 0;
+}
+
+//分支语句
+//是否为奇数
+int main()
+{
+	int a = 0;
+	while (a <= 100)
+	{
+		if (a % 2 == 1)
+		{
+			printf("%d\n", a);
+			a++;
+		}
+		else
+			a++;
+	}
+	return 0;
+}
+int main()
+{
+	int a = 0;
+	printf("请输入a:");
+	scanf_s("%d", &a);
+	if (a % 2 == 1)
+		printf("a是奇数\n");
+	else
+		printf("a不是奇数\n");
 	return 0;
 }
