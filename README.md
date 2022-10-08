@@ -64,3 +64,27 @@ int main()
 		printf("a不是奇数\n");
 	return 0;
 }
+
+//switch case语句
+int main()
+{
+	int day = 0;
+	scanf_s("%d",&day);
+	switch (day)
+	{
+	case 1:
+	case 2:
+	case 3:
+	case 4:
+	case 5:
+		printf("上班时间\n");
+		break;
+	case 6:
+	case 7:
+		printf("休息时间\n");
+		break;
+	default:
+		printf("出错了\n");
+	}
+	return 0;
+}
