@@ -102,3 +102,13 @@ int main()
 	}
 	return 0;
 }
+
+//ctrl+Z
+int main()
+{
+	char ch = 0;
+	while ((ch = getchar()) != EOF)
+		putchar(ch);
+	return 0;
+}
+//如果遇见putchar和while，有时候会遇见死循环,就需要在控制台输入CTRL+Z才能够终止循环。
