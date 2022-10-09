@@ -1,1 +1,21 @@
-
+int main()
+{
+	int ret = 0;
+	char password[20] = { 0 };
+	printf("请输入密码:");
+	scanf_s("%s",password);
+	getchar();
+	//缓冲区还剩余一个'\n'
+	//所以需要一个语句把'\n'读取走
+	printf("请确认:");
+	ret = getchar();
+	if (ret == 'Y')
+	{
+		printf("确认成功!");
+	}
+	else
+	{
+		printf("密码错误!");
+	}
+	return 0;
+}
