@@ -93,3 +93,39 @@ int main()
     system("pause");
     return 0;
 }
+
+//n!
+int main()
+{
+    int n=0;
+    int s=1;
+    int m=0;
+    printf("请输入m的值:");
+    scanf("%d",&m);
+    for(n=1;n<=m;n++)
+    {
+        s=s*n;
+    }
+    printf("%d\n",s);
+    system("pause");
+    return 0;
+}
+//n!的和
+int main()
+{
+    int n=0;
+    int sum=0;
+    int m=0;
+    int s=1;
+    printf("请输入m的值:");
+    scanf("%d",&m);
+    for(n=1;n<=m;n++)
+    {
+        s=s*n;
+        sum=sum+s;
+    }
+    printf("%d\n",s);
+    printf("%d\n",sum);
+    system("pause");
+    return 0;
+}
