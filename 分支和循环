@@ -82,3 +82,14 @@ int main()
     system("pause");
     return 0;
 }
+
+//循环0次
+int main()
+{
+    int k=0;
+    int i=0;
+    for(i=0,k=0;k=0;i++,k++)
+    k++;
+    system("pause");
+    return 0;
+}
