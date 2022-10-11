@@ -204,3 +204,26 @@ int main()
     system("pause");
     return 0;
 }
+
+//密码是否匹配
+int main()
+{
+    int i=0;
+    char arr[20]={0};
+    for(i=0;i<3;i++)
+    {
+        printf("请输入密码:");
+        scanf("%s",arr);
+        if(strcmp(arr,"123456")==0)
+        {
+            printf("密码正确\n");
+            break;
+        }
+    }
+    if(i==3)
+    {
+        printf("登录失败\n");
+    }
+    system("pause");
+    return 0;
+}
