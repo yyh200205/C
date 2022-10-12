@@ -16,3 +16,14 @@ int main()
     system("pause");
     return 0;
 }
+
+//strcpy（放的是目的地，放的是原函数）复制函数
+int main()
+{
+    char arr1[]="bit";
+    char arr2[20]={0};
+    strcpy(arr2,arr1);//第一个放的是目的地，第二个放的是字符串来源
+    printf("%s\n",arr2);
+    system("pause");
+    return 0;
+}
