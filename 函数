@@ -61,6 +61,7 @@ int main()
 //交换函数
 //第二个函数结果错了，是因为x，y和a，b的地址不一样，在函数内部，只交换了x，y的值，而a，b的值没有发生交换
 //实质上是说只交换了形参，没有交换实参。
+传值调用                    传址调用
 void swap(int*pa,int*pb)//void swap(int x,int y)//这个函数不能够实现
 {                       //{
     int z=*pa;          //    int z=0;
