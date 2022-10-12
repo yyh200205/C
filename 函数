@@ -27,3 +27,14 @@ int main()
     system("pause");
     return 0;
 }
+
+//memset(起始地址，填充的值，设置的长度)
+//memory set 内存设置
+int main()
+{
+    char arr[]="hello,world";
+    memset(arr,'*',3);
+    printf("%s\n",arr);
+    system("pause");
+    return 0;
+}
