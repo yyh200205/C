@@ -38,3 +38,22 @@ int main()
     system("pause");
     return 0;
 }
+
+//比大小
+int Max(int x,int y)
+{
+    int z=0;
+    z=x>y?x:y;
+    return z;
+}
+int main()
+{
+    int a=0;
+    int b=0;
+    printf("请输入a和b的数值:");
+    scanf("%d,%d",&a,&b);
+    int max=Max(a,b);
+    printf("%d\n",max);
+    system("pause");
+    return 0;
+}
