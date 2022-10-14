@@ -18,3 +18,23 @@ int main()
     system("pause");
     return 0;
 }
+
+//求字符串长度
+int my_strlen(char* str)
+{
+    int count=0;
+    while(*str!='\0')
+    {
+        count++;
+        str++;
+    }
+    return count;
+}
+int main()
+{
+    char arr[]="bit";
+    int len=my_strlen(arr);
+    printf("%d\n",len);
+    system("pause");
+    return 0;
+}
