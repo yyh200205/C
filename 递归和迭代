@@ -1,0 +1,31 @@
+//求n的阶乘
+int Fac2(int n)
+{
+    if(n>1)
+    {
+        return n*Fac1(n-1);
+    }
+    else
+    return n;
+}
+int Fac1(int n)
+{
+    int sum=1;
+    for(int i=1;i<=n;i++)
+    {
+        sum=sum*i;
+    }
+    return sum;
+}
+int main()
+{
+    int n=0;
+    printf("请输入n的值:");
+    scanf("%d",&n);
+    int ret=Fac1(n);
+    int sum=Fac2(n);
+    printf("%d\n",ret);
+    printf("%d\n",sum);
+    system("pause");
+    return 0;
+}
