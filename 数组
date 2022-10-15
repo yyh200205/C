@@ -62,3 +62,19 @@ int main()
     system("pause");
     return 0;
 }
+
+//数组的地址
+int main()
+{
+    int arr[]={1,2,3,4,5,6,7};
+    printf("%p\n",arr);//第一个元素的地址
+    printf("%p\n",arr+1);
+
+    printf("%p\n",&arr[0]);//第一个元素的地址
+    printf("%p\n",&arr[0]+1);
+
+    printf("%p\n",&arr);//数组的起始地址
+    printf("%p\n",&arr+1);//数组起始地址跳过去到最后一个地址后的起始地址
+    system("pause");
+    return 0;
+}
