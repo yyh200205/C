@@ -20,3 +20,22 @@ int main()
 	printf("a=%d b=%d\n",a,b);
 	return 0;
 }
+
+//计算二进制中1的数量
+int main()
+{
+	int num = 0;
+	int count = 0;
+	printf("请输入数值:");
+	scanf_s("%d",&num);
+	while (num)
+	{
+		if (num % 2 == 1)
+		{
+			count++;
+		}
+		num = num / 2;
+	}
+	printf("%d", count);
+	return 0;
+}
