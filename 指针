@@ -62,3 +62,19 @@ int main()
 	*p = 20;
 	return 0;
 }
+
+//指针运算
+// 加减整数
+int main()
+{
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	int i = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int* p = arr;
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d ", *p);
+		p = p + 1;//也就是说p的地址又在此基础上加了一个整形
+	}
+	return 0;
+}
