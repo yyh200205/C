@@ -1,0 +1,9 @@
+//改变变量的内容
+int main()
+{
+	int a = 0x11223344;
+	int* pa = &a;
+	*pa = 0;
+	printf("%d", a);
+	return 0;
+}
