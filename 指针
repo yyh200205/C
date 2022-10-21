@@ -36,3 +36,17 @@ int main()
 	}
 	return 0;
 }
+
+//指针的越界访问
+//当a的地址传下来的时候，a已经被销毁，更改p变量的地址，只能指向空。
+int* test()
+{
+	int a = 10;
+	return &a;
+}
+int main()
+{
+	int* p=test();
+	*p = 20;
+	return 0;
+}
