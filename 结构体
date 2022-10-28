@@ -1,0 +1,27 @@
+#include<stdio.h>
+//描述一个学生
+//名字
+//年龄
+//电话
+//性别
+struct student
+{
+	//成员变量
+	char name[20];
+	int age;
+	char tele[12];
+	char sex[5];
+};//三个全局的结构体变量
+struct T
+{
+	char ch[10];
+	struct student s1;
+	char* pc;
+};
+int main()
+{
+	char arr[] = "hello world";
+	struct T t = { "hehe",{"yyh",20,"13069531815","女"},arr };
+	printf("%s\n", t.ch);
+	return 0;
+}
